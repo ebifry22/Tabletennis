@@ -5,9 +5,6 @@ using UnityEngine.XR;
 
 public class Racket : MonoBehaviour
 {
-    [SerializeField] Transform SpawnPoint;
-    [SerializeField] GameObject ballprefab;
-    [SerializeField] float power = 0.01f;
     [SerializeField] float speed = 2f;
     [SerializeField] XRNode node;
 

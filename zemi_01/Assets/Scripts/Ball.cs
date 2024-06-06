@@ -5,26 +5,17 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    [SerializeField] GameObject leftcontroller;
+    float destroyTime = 5.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        leftcontroller = GameObject.Find("LeftControllerAncor");
+        Destroy(this.gameObject, destroyTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Left")
-        {
-            transform.parent = leftcontroller.transform;
-        }
 
     }
 }
